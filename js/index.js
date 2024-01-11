@@ -20,7 +20,7 @@ function addHoverEffect(itemClass) {
           }
 
           // Odebrat třídu, pokud je offset větší než 60
-          if (isMobileActivated && (rect.top >= offset || rect.bottom <= 315)) {
+          if (isMobileActivated && (rect.top >= offset || rect.bottom <= 320)) {
             isMobileActivated = false;
 
             itemText.style.display = 'block';
