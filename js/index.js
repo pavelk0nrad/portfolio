@@ -10,7 +10,7 @@ function addHoverEffect(itemClass) {
 
         function handleMobileActivation() {
           const rect = item.getBoundingClientRect();
-          const offset = window.innerHeight / 2.4;
+          const offset = window.innerHeight / 2.2;
 
           if (!isMobileActivated && rect.top < offset && rect.bottom >= 0) {
             isMobileActivated = true;
