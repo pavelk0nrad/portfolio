@@ -8,7 +8,7 @@ function addHoverEffect(itemClass) {
       if (window.innerWidth < 768) {
         let isMobileActivated = false;
 
-        window.addEventListener('wheel', function () {
+        function handleMobileActivation() {
           const rect = item.getBoundingClientRect();
           const offset = window.innerHeight / 2.6;
 
@@ -26,7 +26,10 @@ function addHoverEffect(itemClass) {
             itemText.style.display = 'block';
             item.classList.remove(`${itemClass.slice(1)}-${index + 1}`);
           }
-        });
+        }
+
+        window.addEventListener('scroll', handleMobileActivation);
+        window.addEventListener('touchmove', handleMobileActivation);
       } else {
         item.addEventListener('mouseover', function () {
           itemText.style.display = 'none';
