@@ -1,0 +1,394 @@
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body{
+
+  background: linear-gradient(300deg, #010922, #6507ad, #010922);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+a{
+  color: #A784E3;
+}
+
+.main{
+  font-weight: 100;
+/* color: #A784E3; */
+color: white;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+  font-weight: 100;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  max-width: 1065px;
+  width: 100%;
+
+  display: flex;
+  text-align: center;
+  justify-content: space-between; /* Prvky budou rozloženy rovnoměrně */
+  align-items: center;
+  flex-wrap: wrap; /* Zarovnání prvků ve vertikálním směru */
+  border-bottom: solid white 1px;
+}
+.main-img{
+  border-radius: 50%;
+  margin-bottom: 10px;
+      height: 100%; 
+}
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 100px;
+  border-radius: 50%;
+
+}
+
+.logo{
+  font-weight: 100;
+  font-size: 1.4em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logos img{
+  width: 20%;
+  height: 20%;
+}
+
+.social-icon-div {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  
+  }
+  .social-icon-div img{
+    width: 35px;
+  }
+
+  .container{
+    max-width: 1065px;
+    display: flex;
+    justify-content: center;
+   
+  }
+  .container-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .flex-container {
+    background-image: url('../img/fx.png');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    /* max-width: 707px; */
+    max-width: 1130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about-container {
+    background-image: url('../img/fx.png');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    max-width: 707px;
+    /* max-width: 1130px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    transform-style: preserve-3d; /* Udržuje perspektivu transformace */
+    backface-visibility: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: lightgray;
+    padding: 20px;
+    margin: 10px;
+    width: 213px;
+    height: 181px;
+    border-radius: 25px;
+    background-color: #A784E3 !important;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease, transform 0.3s ease;
+  }
+  .item:hover{
+    transform: translateX(0) translateY(-5px) scale(1.0);
+    font-size: 1.1em;
+    border-radius: 20px;
+    filter: brightness(1.2);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    transition: all opacity 0.3s ease, height 0.3s ease;
+
+    
+  }
+  
+  .item:hover h4{
+    font-size: 1.4em;
+  }
+  .item h4{
+    padding: 0;
+    margin: 0;
+  }
+  .item h5{
+    color: #cfcfcf;
+    font-weight: 100;
+  }
+  .item p{
+   
+    font-size: 0.9em;
+    font-weight: 700; 
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }
+  .item a {
+    color: white;
+    text-decoration: none;
+  }
+  .item img{
+    align-content: center;
+    margin-left: 10px;
+    padding-bottom: 3px;
+  }
+  .item {
+    cursor: pointer;
+    background-size: cover;
+  }
+  
+  .item-1 {
+    background-image: url('../img/thmb/knots.png');
+  }
+  
+  .item-2 {
+    background-image: url('../img/thmb/may.png');
+  }
+  
+  .item-3 {
+    background-image: url('../img/thmb/g.png');
+    
+  }
+  
+  .item-4 {
+    background-image: url('../img/wch-thmb.jpg');
+    background-size: cover;
+    background-position: center; 
+
+  }
+  
+  .item-5 {
+    background-image: url('../img/photo05.jpg');
+  }
+  
+  .item-6 {
+    background-image: url('../img/thmb/pyth.png');
+  }
+  
+  .item-7 {
+    background-image: url('../img/photo01.jpg');
+  }
+  .item:nth-child(n + 4):nth-child(-n + 5) {
+    /* margin-left: 15px; 
+    margin-right: 10px;  */
+  }
+
+  .item:nth-child(6) {
+  
+    width: 213px;
+    height: 181px;
+   /* 1 položka ve třetím řádku */
+  }
+ 
+ .text-hidden{
+  display: none;
+  overflow: hidden;
+  transition: all opacity 0.3s ease, height 0.3s ease;
+ }
+  .blurred-background {
+    z-index: 2; /* Bring text to the front */
+    color: #fff;
+    /* background-color: rgba(170, 217, 217, 0.7);  Semi-transparent white background for text */
+
+    background-color: rgba(101, 7, 173, 0.7); /* Semi-transparent white background for text */
+    backdrop-filter: blur(5px); /* Apply the blur effect to the background */
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+    border-radius: 10px;
+    transition: all opacity 0.3s ease, height 0.3s ease;
+  }
+
+  .divider{
+   
+    border-bottom: 1px solid white;
+  }
+  .btn-custom {
+    background-color: white; /* Změňte na požadovanou barvu */
+    color: #1a1a1a; /* Barva textu */
+   
+  }
+  .btn-custom:hover {
+    background-color: #A784E3; /* Změňte na požadovanou barvu */
+    color: white; /* Barva textu */
+   
+  }
+  
+.story-text{
+  padding: 2px;
+  background-color: #6507ad;
+
+}
+
+  .item-p {
+    transform-style: preserve-3d; /* Udržuje perspektivu transformace */
+    backface-visibility: hidden; 
+    display: block;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: white;
+    background-color: #A784E3;
+    padding: 20px;
+    margin: 10px;
+    width: 213px;
+    height: 142px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease, transform 0.3s ease;
+  }
+  .item-p:hover{
+    transform: translateX(0) translateY(-5px) scale(1.0);
+    font-size: 1.1em;
+    background-color: rgba(1, 9, 34, 0.5); /* Semi-transparent white background for text */
+    backdrop-filter: blur(5px);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    transition: all opacity 0.3s ease, height 0.3s ease;
+
+  }
+  .item-p:nth-child(2) {
+    background-image: url('../img/photo01.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(3) {
+    background-image: url('../img/photo02.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(4) {
+    background-image: url('../img/photo03.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(5) {
+    background-image: url('../img/places/p-16.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(6) {
+    background-image: url('../img/photo06.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(7) {
+    background-image: url('../img/places/p-12.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(8) {
+    background-image: url('../img/places/p-13.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(9) {
+    background-image: url('../img/places/p-14.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(10) {
+    background-image: url('../img/places/p-15.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(11) {
+    background-image: url('../img/places/p-11.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(12) {
+    background-image: url('../img/places/p-07.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(13) {
+    background-image: url('../img/places/p-08.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(14) {
+    background-image: url('../img/places/p-10.jpg');
+    background-size: cover;
+  }
+  .item-p:nth-child(15) {
+    background-image: url('../img/places/p-09.jpg');
+    background-size: cover;
+    background-position: bottom;
+  }
+  .section-heading{
+    text-align: center;
+    border-top: 1px solid white;
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+  .project-container{
+    display: flex;
+    justify-content: center;
+    max-width: 1320px;
+  }
+  .project-item{
+    width: 35%;
+    min-width: 500px;
+  }
+
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      max-width: 1065px;
+      display: block;
+      text-align: center;
+      justify-content: space-between; /* Prvky budou rozloženy rovnoměrně */
+      align-items: center;
+      flex-wrap: wrap; /* Zarovnání prvků ve vertikálním směru */
+      border-bottom: solid white 1px;
+    }
+    .main{
+      padding-top: 0;
+    }
+  }
