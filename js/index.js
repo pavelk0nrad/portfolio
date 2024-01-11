@@ -20,7 +20,7 @@ function addHoverEffect(itemClass) {
           }
 
           // Odebrat třídu, pokud je offset větší než 60
-          if (isMobileActivated && (rect.top >= offset || rect.bottom <= 200)) {
+          if (isMobileActivated && (rect.top >= offset || rect.bottom <= 230)) {
             isMobileActivated = false;
 
             itemText.style.display = 'block';
@@ -40,6 +40,9 @@ function addHoverEffect(itemClass) {
           itemText.style.display = 'block';
           item.classList.remove(`${itemClass.slice(1)}-${index + 1}`);
         });
+
+        // Přidání přechodových vlastností pro změnu pozadí
+        item.style.transition = 'background-image 0.s ease-in-out';
       }
     }
   });

@@ -146,6 +146,8 @@ h1{
     background-color: #A784E3 !important;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease, opacity 0.3s ease;
+
   }
   .item:hover{
     transform: translateX(0) translateY(-5px) scale(1.0);
@@ -297,6 +299,7 @@ h1{
     transition: all opacity 0.3s ease, height 0.3s ease;
 
   }
+  
   .item-p:nth-child(2) {
     background-image: url('../img/photo01.jpg');
     background-size: cover;
