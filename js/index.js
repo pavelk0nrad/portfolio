@@ -10,7 +10,7 @@ function addHoverEffect(itemClass) {
 
         function handleMobileActivation() {
           const rect = item.getBoundingClientRect();
-          const offset = window.innerHeight / 2.5;
+          const offset = window.innerHeight / 3;
 
           if (!isMobileActivated && rect.top < offset && rect.bottom >= 0) {
             isMobileActivated = true;
@@ -20,7 +20,7 @@ function addHoverEffect(itemClass) {
           }
 
           // Odebrat třídu, pokud je offset větší než 60
-          if (isMobileActivated && (rect.top >= offset || rect.bottom <= 320)) {
+          if (isMobileActivated && (rect.top >= offset || rect.bottom <= 300)) {
             isMobileActivated = false;
 
             itemText.style.display = 'block';
