@@ -17,6 +17,8 @@ function addHoverEffect(itemClass) {
 
             itemText.style.display = 'none';
             item.classList.add(`${itemClass.slice(1)}-${index + 1}`);
+            item.classList.add('item-hover');
+
           }
 
           // Odebrat třídu, pokud je offset větší než 60
@@ -25,6 +27,8 @@ function addHoverEffect(itemClass) {
 
             itemText.style.display = 'block';
             item.classList.remove(`${itemClass.slice(1)}-${index + 1}`);
+            item.classList.remove('item-hover');
+
           }
         }
 

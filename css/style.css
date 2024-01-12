@@ -159,6 +159,15 @@ h1{
 
     
   }
+/*For mobile version*/
+  .item-hover {
+    transform: translateX(0) translateY(-5px) scale(1.0);
+    font-size: 1.1em;
+    border-radius: 20px;
+    filter: brightness(1.2);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    transition: all opacity 0.3s ease, height 0.3s ease;
+  }
   
   .item:hover h4{
     font-size: 1.4em;
